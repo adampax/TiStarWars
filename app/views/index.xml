@@ -1,5 +1,11 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+	<NavigationWindow module="controls">
+		<Window>
+			<TableView id='table' dataCollection='films' onClick='rowClick'>
+				<TableViewRow>
+					<Label id="title">{title}</Label>
+				</TableViewRow>
+			</TableView>
+		</Window>
+	</NavigationWindow>
 </Alloy>

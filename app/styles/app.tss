@@ -7,20 +7,47 @@ have the lowest priority of any style settings.
 For more information, see the "Style Priorities" section of
 http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
 
-For example, the following would apply to all labels, windows,
-and text fields (depending on platform) in your app unless you
-overrode the settings with other TSS, XML, or JS settings:
-
-'Label[platform=android,windows]': {
-	color: '#000' // all platforms except Android and Windows default to black
-}
-
-'Window': {
-	backgroundColor: '#fff' // white background instead of default transparent or black
-}
-
-'TextField[platform=android]': {
-	height: Ti.UI.SIZE
-}
-
 */
+
+'Window[platform=ios]': {
+	backgroundColor:'#000',
+	barColor: '#000',
+	navTintColor:'#fff',
+	title: 'ti star wars',
+	titleAttributes: {
+		width: Ti.UI.FILL,
+		color:'#f80316',
+		font: {
+			fontWeight: 'normal',
+			fontSize: 30,
+			fontFamily: 'Star Jedi Hollow'
+		}
+	},
+	backButtonTitle:'',
+	includeOpaqueBars: true
+},
+
+'Window[platform=android]':{
+	title: 'Ti Star Wars'
+}
+
+"TableView": {
+	backgroundColor: '#000',
+	hasChild: true
+},
+
+"TableViewRow": {
+	hasChild: true,
+	selectedBackgroundColor:'#ff0000'
+}
+
+
+
+"Label": {
+	left:20,
+	height: 50,
+	color: "#fff",
+	font: {
+		fontSize: 22
+	}
+}

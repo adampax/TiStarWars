@@ -1,0 +1,13 @@
+'Window[platform=ios]': {
+	titleAttributes: {
+		color:'#fff',
+		font: {
+			fontSize: 19,
+			fontFamily: 'Star Jedi'
+		}
+	}
+}
+
+'Window[platform=android]':{
+	fullscreen:false
+}
