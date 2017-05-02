@@ -63,14 +63,8 @@ function transformModel(model) {
 }
 
 function rowClick(e) {
-    console.log(e);
-
-    console.log(Alloy.Collections.films.at(e.index).toJSON());
-
-    Alloy.createController('detail', Alloy.Collections.films.at(e.index)).getView().open();
-
-    //var v = Alloy.createController('detail', e).getView();
-    //Alloy.Globals.tabgroup.activeTab.open(v);
+    
+    args.parent.openSubwindow('characterDetail', { model: Alloy.Collections.characters.at(e.index) });
 }
 
 function closeWindow(){

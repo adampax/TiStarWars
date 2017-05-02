@@ -1,0 +1,41 @@
+'Window[platform=ios]': {
+	titleAttributes: {
+		color:'#fff',
+		font: {
+			fontSize: 20,
+			fontFamily: 'Star Jedi'
+		}
+	}
+}
+
+'Window[platform=android]':{
+	fullscreen:false
+}
+
+'#top':{
+	top:10,
+	height:100,
+	layout:'vertical'
+}
+
+'.headerText':{
+	top:4,
+	left:24,
+	font: {
+		fontSize:14
+	}
+}
+
+'#subTitle':{
+	top:108,
+	color:'#ff0000',
+	font: {
+			fontSize: 17,
+			fontFamily: 'Star Jedi Hollow'
+		}
+}
+
+'#table': {
+	top: 130
+}
+

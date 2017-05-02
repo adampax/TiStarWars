@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id='win'>	
+	<ActionBar platform='android' onHomeIconItemSelected='closeWindow' displayHomeAsUp='true' />
+	<View id='top'>
+		<Label class='headerText' id='detail1' />
+		<Label class='headerText' id='detail2' />
+		<Label class='headerText' id='detail3' />
+	</View>
+	<Label id='subTitle'>appears in</Label>
+	<TableView id='table'  dataCollection='characters' >
+		<TableViewRow>
+			<Label class='rowText' id="title">{title}</Label>
+		</TableViewRow>
+	</TableView>
+	</Window>
+</Alloy>
