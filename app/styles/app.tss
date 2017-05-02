@@ -44,10 +44,14 @@ http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
 
 
 "Label": {
-	left:20,
-	height: 50,
 	color: "#fff",
 	font: {
-		fontSize: 22
+		fontSize: 20
 	}
+}
+
+
+".rowText": {
+	left:20,
+	height: 50
 }

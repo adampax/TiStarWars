@@ -3,8 +3,11 @@
 		<Window>
 			<TableView id='table' dataCollection='films' onClick='rowClick'>
 				<TableViewRow>
-					<Label id="title">{title}</Label>
+					<Label class='rowText' id="title">{title}</Label>
 				</TableViewRow>
+				<FooterView platform='ios' id='onlyUsedToHideEmptyRowsOnIOS' >
+					<View height=0 />
+				</FooterView>
 			</TableView>
 		</Window>
 	</NavigationWindow>

@@ -3,7 +3,6 @@ var args = $.args;
 
 var film = args.model;
 
-
 var moment = require('alloy/moment');
 var xhr = require('xhr');
 
@@ -14,10 +13,24 @@ if(OS_IOS){
 }
 $.win.title = title;
 
+//set the details
+$.releaseDate.text = 'Release Date: ' + moment(film.get('release_date')).format('MMMM Do, YYYY');
+$.director.text = 'Director: ' + film.get('director');
+$.producer.text = 'Producer: ' + film.get('producer');
 
-//in each film object (or model in our case), we have an array containing the
-//url for each character in the movie
-//Ex: http://swapi.co/api/people/1/ (Luke Skywalker)
+
+/**
+ * Using Promise.all
+ * 
+ * In each film object (or model in our case), we have an array containing the
+ * url for each character in the movie
+ * Ex: http://swapi.co/api/people/1/ (Luke Skywalker)
+ * 
+ * We will iterate through the characters array and create an xhr request
+ * and we'll put all the xhr promises in an array to be tracked by Promise.all()
+ * This will let us know when ALL xhr requests are complete.
+ */
+
 var characterUrls = film.get('characters');
 
 //let's require Promise lib so we can make use of Promise.all()
@@ -43,9 +56,7 @@ characterPromises.then(function(res) {
 
 
 function transformModel(model) {
-    //console.log(model.toJSON());
     transform = model.toJSON();
-    //transform.time = moment(transform.time).format('MM/DD/YY');
     transform.title = transform.name;
 
     return transform;

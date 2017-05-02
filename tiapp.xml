@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
-	<id>com.polancomedia.tipromises</id>
-	<name>TiPromises</name>
+	<id>com.polancomedia.tistarwars</id>
+	<name>TiStarWars</name>
 	<version>1.0</version>
 	<publisher>not specified</publisher>
 	<url>http://polancomedia.com</url>

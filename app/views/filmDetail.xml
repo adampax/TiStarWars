@@ -1,9 +1,15 @@
 <Alloy>
-	<Window id='win'>
+	<Window id='win'>	
 	<ActionBar platform='android' onHomeIconItemSelected='closeWindow' displayHomeAsUp='true' />
+	<View id='top'>
+		<Label class='headerText' id='releaseDate' />
+		<Label class='headerText' id='director' />
+		<Label class='headerText' id='producer' />
+	</View>
+	<Label id='characters'>characters</Label>
 	<TableView id='table'  dataCollection='characters' dataTransform='transformModel' onClick='rowClick'>
 		<TableViewRow>
-			<Label id="title">{title}</Label>
+			<Label class='rowText' id="title">{title}</Label>
 		</TableViewRow>
 	</TableView>
 	</Window>
