@@ -1,10 +1,15 @@
-# TiPromises
+# TiStarWars
 
 This is an example project demonstrating the use of JavaScript Promises inside of an Appcelerator
 Titanium Project.
 
-It uses the super-fun [Star Wars API](http://swapi.co/) for data
+[Blog Post](http://adampaxton.com/using-javascript-promises-in-appcelerator-titanium/)
+
+![TiStarWars screenshot](https://i2.wp.com/adampaxton.com/wp-content/uploads/2017/04/TiStarWars-main.png "TiStarWars")
+
 ## Data
+Is uses the super-fun [Star Wars API](http://swapi.co/) for data.
+
 This is an example response from [http://swapi.co/api/films/1/](http://swapi.co/api/films/1/)
 
 ~~~

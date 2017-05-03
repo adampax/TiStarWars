@@ -39,7 +39,7 @@ http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
 	selectedBackgroundColor: '#ff0000'
 }
 
-'.hasChild': {
+'.hasChild[platform=ios]': {
 	hasChild: true
 }
 
