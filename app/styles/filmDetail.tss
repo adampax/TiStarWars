@@ -27,13 +27,13 @@
 }
 
 '#characters':{
-	top:108,
+	top:104,
 	color:'#ff0000',
 	font: {
-			fontSize: 17,
+			fontSize: 19,
 			fontFamily: 'Star Jedi Hollow'
 		}
-}
+},
 
 '#table': {
 	top: 130

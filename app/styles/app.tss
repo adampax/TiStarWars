@@ -31,14 +31,21 @@ http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
 	title: 'Ti Star Wars'
 }
 
-"TableView": {
+"TableView[platform=ios]": {
 	backgroundColor: '#000',
-	hasChild: true
-},
+}
 
-"TableViewRow": {
-	hasChild: true,
-	selectedBackgroundColor:'#ff0000'
+"TableViewRow[platform=ios]": {
+	selectedBackgroundColor: '#ff0000'
+}
+
+'.hasChild': {
+	hasChild: true
+}
+
+"TableViewRow[platform=android]": {
+	backgroundSelectedColor: '#ff0000'
+	
 }
 
 

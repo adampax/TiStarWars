@@ -1,5 +1,10 @@
-var moment = require('alloy/moment');
 var xhr = require('xhr');
+
+/**
+ * For our first request, we are going to fetch the entire films collection
+ * from the Star Wars API (swapi.co) and add it to a collection that is bound
+ * to a table. 
+ */
 
 xhr.send({
 	url: 'https://swapi.co/api/films'

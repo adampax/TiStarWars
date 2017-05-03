@@ -2,7 +2,7 @@
 	<NavigationWindow module="controls">
 		<Window>
 			<TableView id='table' dataCollection='films' onClick='rowClick'>
-				<TableViewRow>
+				<TableViewRow class='hasChild'>
 					<Label class='rowText' id="title">{title}</Label>
 				</TableViewRow>
 				<FooterView platform='ios' id='onlyUsedToHideEmptyRowsOnIOS' >

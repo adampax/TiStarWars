@@ -63,7 +63,6 @@ function transformModel(model) {
 }
 
 function rowClick(e) {
-    
     args.parent.openSubwindow('characterDetail', { model: Alloy.Collections.characters.at(e.index) });
 }
 

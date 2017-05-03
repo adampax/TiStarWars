@@ -8,7 +8,7 @@
 	</View>
 	<Label id='characters'>characters</Label>
 	<TableView id='table'  dataCollection='characters' dataTransform='transformModel' onClick='rowClick'>
-		<TableViewRow>
+		<TableViewRow class='hasChild'>
 			<Label class='rowText' id="title">{title}</Label>
 		</TableViewRow>
 	</TableView>
