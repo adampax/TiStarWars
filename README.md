@@ -1,11 +1,13 @@
 # TiStarWars
 
 This is an example project demonstrating the use of JavaScript Promises inside of an Appcelerator
-Titanium Project.
+Titanium Project. More info:
 
-[Blog Post](http://adampaxton.com/using-javascript-promises-in-appcelerator-titanium/)
+[TiStarWars - The Force Reawakens](http://adampaxton.com/tistarwars-fetching-data-from-an-api-in-appcelerator-titanium/)
 
-![TiStarWars screenshot](https://i2.wp.com/adampaxton.com/wp-content/uploads/2017/04/TiStarWars-main.png "TiStarWars")
+[Using Promises in Appcelerator](http://adampaxton.com/using-javascript-promises-in-appcelerator-titanium/)
+
+![TiStarWars screenshot](https://i1.wp.com/adampaxton.com/wp-content/uploads/2017/05/TiStarWarsNexus-main.jpg?resize=576%2C1024 "TiStarWars")
 
 ## Data
 Is uses the super-fun [Star Wars API](http://swapi.co/) for data.
