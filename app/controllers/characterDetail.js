@@ -63,10 +63,6 @@ function closeWindow() {
     $.win.close();
 }
 
-if (OS_ANDROID) {
-    $.win.addEventListener('android:back', closeWindow);
-}
-
 Alloy.Collections.films.trigger('change');
 
 $.win.addEventListener('close', function () {

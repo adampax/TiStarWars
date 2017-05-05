@@ -70,6 +70,6 @@ function closeWindow(){
     $.win.close();
 }
 
-if(OS_ANDROID){
-    $.win.addEventListener('android:back', closeWindow);
-}
+$.win.addEventListener('close', function () {
+    $.destroy();
+});
